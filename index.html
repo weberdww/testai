@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>掌机风格贪吃蛇</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="console">
+      <header class="console-top">
+        <p class="brand">Pixel Pocket</p>
+        <h1>贪吃蛇</h1>
+      </header>
+
+      <section class="screen-shell">
+        <canvas id="game" width="320" height="320" aria-label="贪吃蛇游戏画面"></canvas>
+        <div class="hud">
+          <p>分数：<span id="score">0</span></p>
+          <p>速度：<span id="speed">1</span></p>
+        </div>
+        <p class="hint">方向键 / WASD 控制，空格暂停，Enter 重新开始</p>
+      </section>
+
+      <section class="controls" aria-label="触摸控制">
+        <button data-dir="up">▲</button>
+        <button data-dir="left">◀</button>
+        <button data-dir="down">▼</button>
+        <button data-dir="right">▶</button>
+      </section>
+    </main>
+
+    <script src="snake.js"></script>
+  </body>
+</html>
